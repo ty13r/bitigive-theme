@@ -1,0 +1,23 @@
+/*
+Theme Name: WP Bootstrap
+Theme URI: http://techguymedia.com
+Author: Brad Traversy
+Author URI: http://techguymedia.com
+Description: Simple Bootstrap Wordpress Theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: techguymedia
+*/
+/*
+ * Globals
+ */
+
+@import "parts/variables";
+@import "sections/legacy";
+@import "parts/buttons";
+@import "sections/showcase";
+@import "sections/featured-articles";
+@import "sections/nav";
+@import "sections/footer";
+@import "sections/boxes";

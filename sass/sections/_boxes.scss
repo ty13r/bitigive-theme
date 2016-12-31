@@ -1,0 +1,32 @@
+.boxes {
+  text-align: center;
+  padding-top: 40px;
+  .box {
+    border: none;
+  }
+  p {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  img {
+    max-height: 150px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .btn {
+    margin: 10px 0;
+  }
+  @media (min-width: $screen-sm) {
+    .col-sm-offset-1 {
+        margin-left: 12.333333%;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    p {
+      font-size: 11px;
+    }
+    .btn {
+      padding: 15px 20px;
+    }
+  }
+}

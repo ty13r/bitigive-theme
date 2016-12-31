@@ -1,0 +1,646 @@
+/*
+Theme Name: WP Bootstrap
+Theme URI: http://techguymedia.com
+Author: Brad Traversy
+Author URI: http://techguymedia.com
+Description: Simple Bootstrap Wordpress Theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: techguymedia
+*/
+/*
+ * Globals
+ */
+/* line 1, sass/sections/_legacy.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+}
+
+/* line 6, sass/sections/_legacy.scss */
+.blog-header {
+  position: absolute;
+  clip: rect(0px 0px 0px 0px);
+}
+
+/* line 11, sass/sections/_legacy.scss */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+/*
+ * Masthead for nav
+ */
+/* Nav links */
+/* line 35, sass/sections/_legacy.scss */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+
+/* line 42, sass/sections/_legacy.scss */
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+/* line 49, sass/sections/_legacy.scss */
+.blog-nav .active {
+  color: #fff;
+}
+
+/*
+ * Blog name and description
+ */
+/* line 58, sass/sections/_legacy.scss */
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 62, sass/sections/_legacy.scss */
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+/* line 68, sass/sections/_legacy.scss */
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+/*
+ * Main column and sidebar layout
+ */
+/* line 78, sass/sections/_legacy.scss */
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+/* line 84, sass/sections/_legacy.scss */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+
+/* line 88, sass/sections/_legacy.scss */
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+/* line 93, sass/sections/_legacy.scss */
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+/* Pagination */
+/* line 101, sass/sections/_legacy.scss */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+/* line 105, sass/sections/_legacy.scss */
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+/*
+ * Blog posts
+ */
+/* line 117, sass/sections/_legacy.scss */
+.blog-post {
+  margin-bottom: 60px;
+}
+
+/* line 120, sass/sections/_legacy.scss */
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+
+/* line 124, sass/sections/_legacy.scss */
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+/*
+ * Footer
+ */
+/* line 134, sass/sections/_legacy.scss */
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* line 140, sass/sections/_legacy.scss */
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*
+ * Custom Styles
+ *
+ */
+/* line 149, sass/sections/_legacy.scss */
+.showcase {
+  height: 600px;
+  padding: 100px 20px;
+  text-align: center;
+  border-bottom: #ccc 1px solid;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* line 158, sass/sections/_legacy.scss */
+.boxes {
+  text-align: center;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+/* line 164, sass/sections/_legacy.scss */
+.box .fa {
+  font-size: 45px !important;
+  margin-bottom: 10px;
+}
+
+/* line 169, sass/sections/_legacy.scss */
+.box {
+  padding: 15px;
+  border: #ccc 1px solid;
+}
+
+/* line 174, sass/sections/_legacy.scss */
+.blog-nav a:hover {
+  color: #666;
+}
+
+/* line 178, sass/sections/_legacy.scss */
+.post-thumb img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+/* line 184, sass/sections/_legacy.scss */
+.comments {
+  border: 1px #ccc solid;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* line 191, sass/sections/_legacy.scss */
+.comments h3, .comments h2 {
+  background: #428bca;
+  color: #fff;
+  padding: 5px;
+}
+
+/* line 197, sass/sections/_legacy.scss */
+.comment-body {
+  border: #ccc solid 1px;
+  margin-bottom: 10px;
+  padding: 20px 10px;
+}
+
+/* line 203, sass/sections/_legacy.scss */
+.comment-meta {
+  background: #428bca;
+  color: #fff;
+  padding: 10px;
+  overflow: auto;
+}
+
+/* line 210, sass/sections/_legacy.scss */
+.comment-meta a {
+  color: #fff;
+}
+
+/* line 214, sass/sections/_legacy.scss */
+.comment-meta img {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 219, sass/sections/_legacy.scss */
+.comment-reply-link {
+  background: #428bca;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+/* line 226, sass/sections/_legacy.scss */
+.comment-form input, .comment-form textarea {
+  width: 100%;
+  padding: 4px;
+  border: #ccc solid 1px;
+  margin-bottom: 15px;
+}
+
+/* line 233, sass/sections/_legacy.scss */
+.post-gallery {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 240, sass/sections/_legacy.scss */
+.post-gallery h2 {
+  color: #fff;
+}
+
+/* line 1, sass/parts/_buttons.scss */
+.btn {
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 15px 30px;
+}
+
+/* line 9, sass/parts/_buttons.scss */
+.btn-primary {
+  background-color: #fff;
+  border-color: #fff;
+  color: #0d753c;
+}
+/* line 14, sass/parts/_buttons.scss */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #0d753c;
+  color: #fff;
+  border-color: #0d753c;
+}
+
+/* line 21, sass/parts/_buttons.scss */
+.btn-default {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+/* line 26, sass/parts/_buttons.scss */
+.btn-default:hover, .btn-default:focus, .btn-default:active {
+  background-color: #0d753c;
+  color: #fff;
+  border-color: #0d753c;
+}
+
+/* line 33, sass/parts/_buttons.scss */
+.btn-green {
+  background-color: #0d753c;
+  border-color: #0d753c;
+  color: #fff;
+}
+/* line 38, sass/parts/_buttons.scss */
+.btn-green:hover, .btn-green:focus, .btn-green:active {
+  background-color: #fff;
+  color: #0d753c;
+  border-color: #0d753c;
+}
+
+/* line 1, sass/sections/_showcase.scss */
+.showcase {
+  background-size: cover;
+  background-position: top;
+  background-color: #0d753c;
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  /* line 1, sass/sections/_showcase.scss */
+  .showcase {
+    height: auto;
+    padding-top: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
+  }
+}
+/* line 17, sass/sections/_showcase.scss */
+.showcase h1 {
+  color: #fff;
+  font-size: 38px;
+  line-height: 50px;
+  font-weight: 300;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  /* line 17, sass/sections/_showcase.scss */
+  .showcase h1 {
+    font-size: 34px;
+    line-height: 44px;
+    max-width: 280px;
+  }
+}
+/* line 31, sass/sections/_showcase.scss */
+.showcase p {
+  color: #222;
+}
+/* line 35, sass/sections/_showcase.scss */
+.showcase .btn {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+@media (max-width: 767px) {
+  /* line 35, sass/sections/_showcase.scss */
+  .showcase .btn {
+    margin-top: 20px;
+  }
+}
+/* line 44, sass/sections/_showcase.scss */
+.showcase .donate-wrap {
+  background-color: #fff;
+  padding: 10px 20px 20px 10px;
+}
+@media (max-width: 767px) {
+  /* line 44, sass/sections/_showcase.scss */
+  .showcase .donate-wrap {
+    margin-top: 60px;
+    background-color: #f4f4f4;
+  }
+}
+/* line 51, sass/sections/_showcase.scss */
+.showcase .donate-wrap .donate-qrcode {
+  background-image: url("img/bitgive-qrcode.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 199px;
+}
+/* line 58, sass/sections/_showcase.scss */
+.showcase .donate-wrap .h4.main {
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* line 62, sass/sections/_showcase.scss */
+.showcase .donate-wrap .address {
+  margin-bottom: 20px;
+}
+@media (max-width: 1279px) {
+  /* line 62, sass/sections/_showcase.scss */
+  .showcase .donate-wrap .address {
+    width: 210px;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1023px) {
+  /* line 62, sass/sections/_showcase.scss */
+  .showcase .donate-wrap .address {
+    width: 150px;
+  }
+}
+/* line 77, sass/sections/_showcase.scss */
+.showcase .video-wrap {
+  margin-top: 45px;
+  margin-left: -15px;
+}
+/* line 80, sass/sections/_showcase.scss */
+.showcase .video-wrap .h4 {
+  color: #fff;
+}
+@media (max-width: 767px) {
+  /* line 84, sass/sections/_showcase.scss */
+  .showcase .video-wrap iframe {
+    width: 100%;
+    height: 185px;
+  }
+  /* line 88, sass/sections/_showcase.scss */
+  .showcase .video-wrap .h4 {
+    color: #222;
+    font-size: 22px;
+  }
+}
+
+/* line 1, sass/sections/_featured-articles.scss */
+.featured-articles {
+  margin-bottom: 20px;
+}
+/* line 3, sass/sections/_featured-articles.scss */
+.featured-articles h4 {
+  font-weight: bold;
+}
+
+/* line 1, sass/sections/_nav.scss */
+header > * {
+  vertical-align: middle;
+}
+
+/* line 5, sass/sections/_nav.scss */
+header {
+  background-color: #fff;
+}
+/* line 7, sass/sections/_nav.scss */
+header .container {
+  height: 100px;
+}
+/* line 10, sass/sections/_nav.scss */
+header .logo {
+  background-image: url("img/bitgive-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 75px;
+  width: 200px;
+  position: relative;
+  vertical-align: middle;
+  margin-top: 12.5px;
+}
+/* line 22, sass/sections/_nav.scss */
+header .logo-phrase {
+  text-align: left;
+  font-size: 15px;
+  line-height: 24px;
+  padding-top: 12.5px;
+}
+
+/* line 31, sass/sections/_nav.scss */
+.blog-masthead, .navbar-default {
+  background-color: #f4f4f4;
+  border: none;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  /* line 31, sass/sections/_nav.scss */
+  .blog-masthead, .navbar-default {
+    background-color: #fff;
+  }
+}
+
+/* line 41, sass/sections/_nav.scss */
+.blog-nav .navbar-collapse {
+  padding: 0;
+}
+/* line 44, sass/sections/_nav.scss */
+.blog-nav .navbar-brand {
+  background-image: url("img/bitgive-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+}
+/* line 51, sass/sections/_nav.scss */
+.blog-nav .active a {
+  background-color: #f4f4f4 !important;
+}
+/* line 54, sass/sections/_nav.scss */
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  content: " ";
+  border-bottom: 3px solid #0d753c;
+}
+/* line 63, sass/sections/_nav.scss */
+.blog-nav .navbar-nav {
+  margin: 0;
+}
+/* line 66, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li {
+  margin-right: 15px;
+  color: #222;
+}
+/* line 69, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li > a {
+  padding: 15px 30px;
+  font-size: 22px;
+  color: inherit;
+}
+/* line 75, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li > a:hover:after, .blog-nav .navbar-nav > li > a:focus:after, .blog-nav .navbar-nav > li > a:active:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  content: " ";
+  border-bottom: 3px solid #0d753c;
+}
+/* line 85, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li .open > a {
+  background-color: none;
+}
+/* line 88, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li:first-child {
+  background-color: #0d753c;
+  color: #fff;
+  font-weight: bold;
+}
+/* line 93, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li > .dropdown-menu {
+  border: none;
+  width: 100%;
+  padding: 30px 0 20px 0;
+}
+/* line 98, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li > .dropdown-menu a {
+  padding: 0px 30px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+/* line 103, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li > .dropdown-menu a:hover {
+  color: #0d753c;
+  background-color: inherit;
+}
+
+@media (max-width: 1279px) {
+  /* line 113, sass/sections/_nav.scss */
+  .blog-nav .navbar-nav li {
+    margin: 0;
+  }
+  /* line 115, sass/sections/_nav.scss */
+  .blog-nav .navbar-nav li a {
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  /* line 123, sass/sections/_nav.scss */
+  .blog-nav .navbar-nav li a {
+    padding: 15px 15px;
+    font-size: 15px;
+  }
+}
+/* line 1, sass/sections/_footer.scss */
+.blog-footer {
+  background-color: #f4f4f4;
+  border: none;
+}
+
+/* line 1, sass/sections/_boxes.scss */
+.boxes {
+  text-align: center;
+  padding-top: 40px;
+}
+/* line 4, sass/sections/_boxes.scss */
+.boxes .box {
+  border: none;
+}
+/* line 7, sass/sections/_boxes.scss */
+.boxes p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 11, sass/sections/_boxes.scss */
+.boxes img {
+  max-height: 150px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+/* line 16, sass/sections/_boxes.scss */
+.boxes .btn {
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  /* line 20, sass/sections/_boxes.scss */
+  .boxes .col-sm-offset-1 {
+    margin-left: 12.333333%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 25, sass/sections/_boxes.scss */
+  .boxes p {
+    font-size: 11px;
+  }
+  /* line 28, sass/sections/_boxes.scss */
+  .boxes .btn {
+    padding: 15px 20px;
+  }
+}

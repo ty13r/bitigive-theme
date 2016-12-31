@@ -1,0 +1,128 @@
+header > * {
+  vertical-align: middle;
+}
+
+header {
+  background-color: $color-white;
+  .container {
+    height: 100px;
+  }
+  .logo {
+    background-image: url('img/bitgive-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 75px;
+    width: 200px;
+    position: relative;
+    vertical-align: middle;
+    margin-top: 12.5px;
+    // @include vertical-align();
+  }
+  .logo-phrase {
+    text-align: left;
+    font-size: 15px;
+    line-height: 24px;
+    padding-top: 12.5px;
+
+  }
+}
+
+.blog-masthead, .navbar-default {
+  background-color: $color-grey;
+  border: none;
+  margin: 0;
+  @media (max-width: $screen-xs-max) {
+    background-color: $color-white;
+  }
+}
+
+.blog-nav {
+  .navbar-collapse {
+    padding: 0;
+  }
+  .navbar-brand {
+      background-image: url('img/bitgive-logo.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 150px;
+  }
+   .active {
+     a {
+       background-color: $color-grey !important;
+     }
+     &:after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      content: " ";
+      border-bottom: 3px solid #0d753c;
+    }
+   }
+   .navbar-nav {
+     margin: 0;
+   }
+  .navbar-nav > li {
+    margin-right: 15px;
+    color: $color-dark-grey;
+    > a {
+      padding: 15px 30px;
+      font-size: 22px;
+      color: inherit;
+
+      &:hover, &:focus, &:active {
+        &:after {
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         width: 100%;
+         content: " ";
+         border-bottom: 3px solid #0d753c;
+       }
+      }
+    }
+    .open > a {
+      background-color: none;
+    }
+    &:first-child {
+      background-color: $brand-green;
+      color: $color-white;
+      font-weight: bold;
+    }
+    > .dropdown-menu {
+      border: none;
+      width: 100%;
+      padding: 30px 0 20px 0;
+
+      a {
+        padding: 0px 30px;
+        font-size: 18px;
+        margin-bottom: 20px;
+
+        &:hover {
+          color: $brand-green;
+          background-color: inherit;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-md-max) {
+  .blog-nav .navbar-nav li {
+    margin: 0;
+    a {
+      padding: 15px 20px;
+    }
+  }
+}
+
+@media (max-width: $screen-sm-max) and (min-width: $screen-sm) {
+  .blog-nav .navbar-nav li {
+    a {
+      padding: 15px 15px;
+      font-size: 15px;
+    }
+  }
+}
