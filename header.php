@@ -37,12 +37,19 @@
     <div class="blog-masthead">
       <header class="hidden-xs">
         <div class="container">
-          <a href="<?php echo get_home_url(); ?>"><span class="logo"></span></a>
-          <span class="logo-phrase">Leveraging Bitcoin & Blockchain for Global Philanthropy</span>
-          <span class="social-logos">
-            <span class="facebook-logo"></span>
-            <span class="twitter-logo"></span>
-          </span>
+          <div class="row vertical-align">
+            <div class="col col-sm-3">
+              <a href="<?php echo get_home_url(); ?>"><span class="logo"></span></a>
+            </div>
+            <div class="col col-sm-6">
+              <span class="logo-phrase">Leveraging Bitcoin & Blockchain for Global Philanthropy</span>
+            </div>
+            <div class="col col-sm-3 social-logos">
+              <a class="facebook-logo" href="https://www.facebook.com/BitGive/"><img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/img/facebook-logo.png" alt=""></a>
+              <!-- <a class="googleplus-logo" href="#"><img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/img/google-plus-logo.png" alt=""></a> -->
+              <a class="twitter-logo" href="https://twitter.com/BitGiveOrg"><img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/img/twitter-logo.png" alt=""></a>
+            </div>
+          </div>
         </div>
       </header>
       <div class="container">
@@ -74,6 +81,6 @@
     </div>
 
       <div class="blog-header">
-        <h1 class="blog-title"><?php bloginfo('name'); ?></h1>
+        <h2 class="blog-title"><?php bloginfo('name'); ?></h2>
         <p class="lead blog-description"><?php bloginfo('description'); ?></p>
       </div>

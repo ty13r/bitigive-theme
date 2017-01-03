@@ -3,6 +3,8 @@
   background-position: top;
   background-color: $brand-green;
   margin-bottom: 50px;
+  height: 563px;
+  padding: 50px 20px;
 
   @media (max-width: $screen-xs-max) {
     height: auto;
@@ -42,8 +44,10 @@
   }
 
   .donate-wrap {
+    max-width: 545px;
     background-color: $color-white;
-    padding: 10px 20px 20px 10px;
+    padding: 10px 20px 20px 0px;
+    // @media (max-width: )
     @media (max-width: $screen-xs-max) {
       margin-top: 60px;
       background-color: $color-grey;
@@ -57,7 +61,6 @@
     }
     .h4.main {
       font-weight: bold;
-      margin-top: 20px;
     }
     .address {
       margin-bottom: 20px;
@@ -90,5 +93,41 @@
         font-size: 22px;
       }
     }
+  }
+}
+
+.showcase.page {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 0;
+
+  p.text-white {
+    color: $color-white;
+  }
+  .showcase-background {
+    height: 563px;
+    position: absolute;
+    background-color: $brand-green;
+    width: 100%;
+    @media (max-width: $screen-sm-max) {
+      height: 630px;
+    }
+    @media (max-width: $screen-xs-max) {
+      height: 480px;
+    }
+  }
+  .showcase-row {
+    padding: 50px 20px;
+    padding-bottom: 0;
+    @media (max-width: $screen-xs) {
+      padding-top: 30px;
+    }
+  }
+  .video-wrap {
+    margin-left: 0;
+  }
+  .donate-wrap.row {
+    margin-left: 0;
   }
 }

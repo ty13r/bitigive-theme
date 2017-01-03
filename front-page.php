@@ -4,13 +4,13 @@
 <section class="showcase">
   <div class="container">
     <div class="row">
-      <div class="col-sm-4 text-left">
+      <div class="col-sm-6 col-md-4 text-left">
         <h1><?php echo get_theme_mod('showcase_heading', 'Custom Bootstrap Wordpress Theme'); ?></h1>
         <!-- <p><?php echo get_theme_mod('showcase_text', 'Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam'); ?></p> -->
         <a href="<?php echo get_theme_mod('btn_url', 'http://test.com'); ?>" target="_blank" class="btn btn-primary btn-lg"><?php echo get_theme_mod('btn_text', 'Donate Now'); ?></a>
         <a href="<?php echo get_theme_mod('btn_url1', 'http://test.com'); ?>" target="_blank" class="btn btn-default btn-lg"><?php echo get_theme_mod('btn_text1', 'Learn More'); ?></a>
       </div>
-      <div class="col-sm-5 col-sm-offset-3">
+      <div class="col-sm-6 col-md-5 col-md-offset-3">
         <div class="donate-wrap row text-left">
             <a class="col-xs-12 col-sm-5 donate-qrcode" href="bitcoin:1PEoUKNxTZsc5rFSQvQjeTVwDE9vEDCRWm?label=BitGive%20Foundation&category=Expense%3ACharity"></a>
             <div class="col-xs-12 col-sm-7">
@@ -24,7 +24,7 @@
         </div>
         <div class="video-wrap text-left">
           <h3 class="h4">Watch: Our Kenya Water Well Project</h3>
-          <iframe width="437" height="245" src="https://www.youtube.com/embed/ESEI6WazuUA?showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe class="video" src="https://www.youtube.com/embed/ESEI6WazuUA?showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>

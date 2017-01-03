@@ -26,6 +26,14 @@ header {
     padding-top: 12.5px;
 
   }
+  .social-logos {
+    justify-content: center;
+    a {
+      display: inline-block;
+      max-width: 50px;
+      margin-right: 20px;
+    }
+  }
 }
 
 .blog-masthead, .navbar-default {
@@ -47,17 +55,17 @@ header {
       background-size: contain;
       width: 150px;
   }
-   .active {
+   > .active {
      a {
-       background-color: $color-grey !important;
+       background-color: $color-white;
      }
      &:after {
       position: absolute;
-      bottom: 0;
+      bottom: 4px;
       right: 0;
       width: 100%;
       content: " ";
-      border-bottom: 3px solid #0d753c;
+      border-bottom: 2px solid $brand-green;
     }
    }
    .navbar-nav {
@@ -72,13 +80,14 @@ header {
       color: inherit;
 
       &:hover, &:focus, &:active {
+        color: $brand-green !important;
         &:after {
          position: absolute;
-         bottom: 0;
+         bottom: 4px;
          right: 0;
          width: 100%;
          content: " ";
-         border-bottom: 3px solid #0d753c;
+         border-bottom: 2px solid $brand-green;
        }
       }
     }
@@ -89,13 +98,24 @@ header {
       background-color: $brand-green;
       color: $color-white;
       font-weight: bold;
+      a {
+        &:hover, &:focus, &:active {
+          color: $color-grey !important;
+        }
+      }
     }
-    > .dropdown-menu {
+    .dropdown-menu {
       border: none;
       width: 100%;
       padding: 30px 0 20px 0;
 
-      a {
+      .active {
+        &:after {
+          border: none;
+        }
+      }
+      > li > a {
+        color: $color-dark-grey;
         padding: 0px 30px;
         font-size: 18px;
         margin-bottom: 20px;
@@ -107,6 +127,29 @@ header {
       }
     }
   }
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+  color: $color-dark-grey;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: $color-grey;
+  color: $brand-green;
+  &:after {
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    width: 100%;
+    content: " ";
+    border-bottom: 2px solid $brand-green;
+  }
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  background-color: $color-white;
+  color: $brand-green !important;
 }
 
 @media (max-width: $screen-md-max) {

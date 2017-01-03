@@ -61,11 +61,6 @@ h6, .h6 {
 }
 
 /* Active state gets a caret at the bottom */
-/* line 49, sass/sections/_legacy.scss */
-.blog-nav .active {
-  color: #fff;
-}
-
 /*
  * Blog name and description
  */
@@ -285,6 +280,109 @@ h6, .h6 {
   color: #fff;
 }
 
+/* line 16, sass/parts/_variables.scss */
+.h1 {
+  font-size: 40px;
+  line-height: 1.25;
+}
+
+/* line 20, sass/parts/_variables.scss */
+.h4 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+/* line 25, sass/parts/_variables.scss */
+.text-white {
+  color: #fff;
+}
+
+/* line 28, sass/parts/_variables.scss */
+.text-bold {
+  font-weight: bold;
+}
+
+/* line 31, sass/parts/_variables.scss */
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+/* line 34, sass/parts/_variables.scss */
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+/* line 37, sass/parts/_variables.scss */
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+/* line 40, sass/parts/_variables.scss */
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+/* line 43, sass/parts/_variables.scss */
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+/* line 46, sass/parts/_variables.scss */
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+/* line 50, sass/parts/_variables.scss */
+iframe.video {
+  -webkit-box-shadow: 0px 2px 39px 4px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 2px 39px 4px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 2px 39px 4px rgba(0, 0, 0, 0.31);
+  max-width: 436px;
+  width: 100%;
+  min-height: 245px;
+}
+
+/* line 59, sass/parts/_variables.scss */
+iframe.donation-form {
+  border: none;
+}
+
+/* line 63, sass/parts/_variables.scss */
+.page-content hr {
+  margin: 20px 0;
+}
+
+/* line 67, sass/parts/_variables.scss */
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 72, sass/parts/_variables.scss */
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;
+}
+
+/* line 79, sass/parts/_variables.scss */
+.vertical-align > [class^="col-"] > div,
+.vertical-align > [class*=" col-"] > div {
+  /* flex: 1; */
+  flex-grow: 1;
+}
+
+/* line 85, sass/parts/_variables.scss */
+a.text-white:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 90, sass/parts/_variables.scss */
+a.text-underline {
+  text-decoration: underline;
+}
+
 /* line 1, sass/parts/_buttons.scss */
 .btn {
   font-size: 15px;
@@ -339,6 +437,8 @@ h6, .h6 {
   background-position: top;
   background-color: #0d753c;
   margin-bottom: 50px;
+  height: 563px;
+  padding: 50px 20px;
 }
 @media (max-width: 767px) {
   /* line 1, sass/sections/_showcase.scss */
@@ -352,7 +452,7 @@ h6, .h6 {
     border: none;
   }
 }
-/* line 17, sass/sections/_showcase.scss */
+/* line 19, sass/sections/_showcase.scss */
 .showcase h1 {
   color: #fff;
   font-size: 38px;
@@ -361,41 +461,42 @@ h6, .h6 {
   text-align: left;
 }
 @media (max-width: 767px) {
-  /* line 17, sass/sections/_showcase.scss */
+  /* line 19, sass/sections/_showcase.scss */
   .showcase h1 {
     font-size: 34px;
     line-height: 44px;
     max-width: 280px;
   }
 }
-/* line 31, sass/sections/_showcase.scss */
+/* line 33, sass/sections/_showcase.scss */
 .showcase p {
   color: #222;
 }
-/* line 35, sass/sections/_showcase.scss */
+/* line 37, sass/sections/_showcase.scss */
 .showcase .btn {
   margin-top: 30px;
   margin-right: 30px;
 }
 @media (max-width: 767px) {
-  /* line 35, sass/sections/_showcase.scss */
+  /* line 37, sass/sections/_showcase.scss */
   .showcase .btn {
     margin-top: 20px;
   }
 }
-/* line 44, sass/sections/_showcase.scss */
+/* line 46, sass/sections/_showcase.scss */
 .showcase .donate-wrap {
+  max-width: 545px;
   background-color: #fff;
-  padding: 10px 20px 20px 10px;
+  padding: 10px 20px 20px 0px;
 }
 @media (max-width: 767px) {
-  /* line 44, sass/sections/_showcase.scss */
+  /* line 46, sass/sections/_showcase.scss */
   .showcase .donate-wrap {
     margin-top: 60px;
     background-color: #f4f4f4;
   }
 }
-/* line 51, sass/sections/_showcase.scss */
+/* line 55, sass/sections/_showcase.scss */
 .showcase .donate-wrap .donate-qrcode {
   background-image: url("img/bitgive-qrcode.png");
   background-size: contain;
@@ -403,17 +504,16 @@ h6, .h6 {
   background-position: center;
   height: 199px;
 }
-/* line 58, sass/sections/_showcase.scss */
+/* line 62, sass/sections/_showcase.scss */
 .showcase .donate-wrap .h4.main {
   font-weight: bold;
-  margin-top: 20px;
 }
-/* line 62, sass/sections/_showcase.scss */
+/* line 65, sass/sections/_showcase.scss */
 .showcase .donate-wrap .address {
   margin-bottom: 20px;
 }
 @media (max-width: 1279px) {
-  /* line 62, sass/sections/_showcase.scss */
+  /* line 65, sass/sections/_showcase.scss */
   .showcase .donate-wrap .address {
     width: 210px;
     display: block;
@@ -423,31 +523,81 @@ h6, .h6 {
   }
 }
 @media (max-width: 1023px) {
-  /* line 62, sass/sections/_showcase.scss */
+  /* line 65, sass/sections/_showcase.scss */
   .showcase .donate-wrap .address {
     width: 150px;
   }
 }
-/* line 77, sass/sections/_showcase.scss */
+/* line 80, sass/sections/_showcase.scss */
 .showcase .video-wrap {
   margin-top: 45px;
   margin-left: -15px;
 }
-/* line 80, sass/sections/_showcase.scss */
+/* line 83, sass/sections/_showcase.scss */
 .showcase .video-wrap .h4 {
   color: #fff;
 }
 @media (max-width: 767px) {
-  /* line 84, sass/sections/_showcase.scss */
+  /* line 87, sass/sections/_showcase.scss */
   .showcase .video-wrap iframe {
     width: 100%;
     height: 185px;
   }
-  /* line 88, sass/sections/_showcase.scss */
+  /* line 91, sass/sections/_showcase.scss */
   .showcase .video-wrap .h4 {
     color: #222;
     font-size: 22px;
   }
+}
+
+/* line 99, sass/sections/_showcase.scss */
+.showcase.page {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 0;
+}
+/* line 105, sass/sections/_showcase.scss */
+.showcase.page p.text-white {
+  color: #fff;
+}
+/* line 108, sass/sections/_showcase.scss */
+.showcase.page .showcase-background {
+  height: 563px;
+  position: absolute;
+  background-color: #0d753c;
+  width: 100%;
+}
+@media (max-width: 1023px) {
+  /* line 108, sass/sections/_showcase.scss */
+  .showcase.page .showcase-background {
+    height: 630px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 108, sass/sections/_showcase.scss */
+  .showcase.page .showcase-background {
+    height: 480px;
+  }
+}
+/* line 120, sass/sections/_showcase.scss */
+.showcase.page .showcase-row {
+  padding: 50px 20px;
+  padding-bottom: 0;
+}
+@media (max-width: 480px) {
+  /* line 120, sass/sections/_showcase.scss */
+  .showcase.page .showcase-row {
+    padding-top: 30px;
+  }
+}
+/* line 127, sass/sections/_showcase.scss */
+.showcase.page .video-wrap {
+  margin-left: 0;
+}
+/* line 130, sass/sections/_showcase.scss */
+.showcase.page .donate-wrap.row {
+  margin-left: 0;
 }
 
 /* line 1, sass/sections/_featured-articles.scss */
@@ -491,108 +641,158 @@ header .logo-phrase {
   line-height: 24px;
   padding-top: 12.5px;
 }
-
+/* line 29, sass/sections/_nav.scss */
+header .social-logos {
+  justify-content: center;
+}
 /* line 31, sass/sections/_nav.scss */
+header .social-logos a {
+  display: inline-block;
+  max-width: 50px;
+  margin-right: 20px;
+}
+
+/* line 39, sass/sections/_nav.scss */
 .blog-masthead, .navbar-default {
   background-color: #f4f4f4;
   border: none;
   margin: 0;
 }
 @media (max-width: 767px) {
-  /* line 31, sass/sections/_nav.scss */
+  /* line 39, sass/sections/_nav.scss */
   .blog-masthead, .navbar-default {
     background-color: #fff;
   }
 }
 
-/* line 41, sass/sections/_nav.scss */
+/* line 49, sass/sections/_nav.scss */
 .blog-nav .navbar-collapse {
   padding: 0;
 }
-/* line 44, sass/sections/_nav.scss */
+/* line 52, sass/sections/_nav.scss */
 .blog-nav .navbar-brand {
   background-image: url("img/bitgive-logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 150px;
 }
-/* line 51, sass/sections/_nav.scss */
-.blog-nav .active a {
-  background-color: #f4f4f4 !important;
+/* line 59, sass/sections/_nav.scss */
+.blog-nav > .active a {
+  background-color: #fff;
 }
-/* line 54, sass/sections/_nav.scss */
-.blog-nav .active:after {
+/* line 62, sass/sections/_nav.scss */
+.blog-nav > .active:after {
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   right: 0;
   width: 100%;
   content: " ";
-  border-bottom: 3px solid #0d753c;
+  border-bottom: 2px solid #0d753c;
 }
-/* line 63, sass/sections/_nav.scss */
+/* line 71, sass/sections/_nav.scss */
 .blog-nav .navbar-nav {
   margin: 0;
 }
-/* line 66, sass/sections/_nav.scss */
+/* line 74, sass/sections/_nav.scss */
 .blog-nav .navbar-nav > li {
   margin-right: 15px;
   color: #222;
 }
-/* line 69, sass/sections/_nav.scss */
+/* line 77, sass/sections/_nav.scss */
 .blog-nav .navbar-nav > li > a {
   padding: 15px 30px;
   font-size: 22px;
   color: inherit;
 }
-/* line 75, sass/sections/_nav.scss */
+/* line 82, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li > a:hover, .blog-nav .navbar-nav > li > a:focus, .blog-nav .navbar-nav > li > a:active {
+  color: #0d753c !important;
+}
+/* line 84, sass/sections/_nav.scss */
 .blog-nav .navbar-nav > li > a:hover:after, .blog-nav .navbar-nav > li > a:focus:after, .blog-nav .navbar-nav > li > a:active:after {
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   right: 0;
   width: 100%;
   content: " ";
-  border-bottom: 3px solid #0d753c;
+  border-bottom: 2px solid #0d753c;
 }
-/* line 85, sass/sections/_nav.scss */
+/* line 94, sass/sections/_nav.scss */
 .blog-nav .navbar-nav > li .open > a {
   background-color: none;
 }
-/* line 88, sass/sections/_nav.scss */
+/* line 97, sass/sections/_nav.scss */
 .blog-nav .navbar-nav > li:first-child {
   background-color: #0d753c;
   color: #fff;
   font-weight: bold;
 }
-/* line 93, sass/sections/_nav.scss */
-.blog-nav .navbar-nav > li > .dropdown-menu {
+/* line 102, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li:first-child a:hover, .blog-nav .navbar-nav > li:first-child a:focus, .blog-nav .navbar-nav > li:first-child a:active {
+  color: #f4f4f4 !important;
+}
+/* line 107, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li .dropdown-menu {
   border: none;
   width: 100%;
   padding: 30px 0 20px 0;
 }
-/* line 98, sass/sections/_nav.scss */
-.blog-nav .navbar-nav > li > .dropdown-menu a {
+/* line 113, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li .dropdown-menu .active:after {
+  border: none;
+}
+/* line 117, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li .dropdown-menu > li > a {
+  color: #222;
   padding: 0px 30px;
   font-size: 18px;
   margin-bottom: 20px;
 }
-/* line 103, sass/sections/_nav.scss */
-.blog-nav .navbar-nav > li > .dropdown-menu a:hover {
+/* line 123, sass/sections/_nav.scss */
+.blog-nav .navbar-nav > li .dropdown-menu > li > a:hover {
   color: #0d753c;
   background-color: inherit;
 }
 
+/* line 132, sass/sections/_nav.scss */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+  color: #222;
+}
+
+/* line 137, sass/sections/_nav.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: #f4f4f4;
+  color: #0d753c;
+}
+/* line 140, sass/sections/_nav.scss */
+.navbar-default .navbar-nav > .active > a:after, .navbar-default .navbar-nav > .active > a:hover:after, .navbar-default .navbar-nav > .active > a:focus:after {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  width: 100%;
+  content: " ";
+  border-bottom: 2px solid #0d753c;
+}
+
+/* line 150, sass/sections/_nav.scss */
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  background-color: #fff;
+  color: #0d753c !important;
+}
+
 @media (max-width: 1279px) {
-  /* line 113, sass/sections/_nav.scss */
+  /* line 156, sass/sections/_nav.scss */
   .blog-nav .navbar-nav li {
     margin: 0;
   }
-  /* line 115, sass/sections/_nav.scss */
+  /* line 158, sass/sections/_nav.scss */
   .blog-nav .navbar-nav li a {
     padding: 15px 20px;
   }
 }
 @media (max-width: 1023px) and (min-width: 768px) {
-  /* line 123, sass/sections/_nav.scss */
+  /* line 166, sass/sections/_nav.scss */
   .blog-nav .navbar-nav li a {
     padding: 15px 15px;
     font-size: 15px;
